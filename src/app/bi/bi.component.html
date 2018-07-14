@@ -1,0 +1,31 @@
+
+<div style="text-align:center" *ngIf="flag" class="reports-iframe">
+  <h1>
+    {{title}}
+  </h1>
+  <powerbi-component 
+    type="report"
+    id= {{reportId}}
+    embedUrl = "https://app.powerbi.com/reportEmbed?reportId=549d8b0e-b29a-4ec4-9f0d-dacdd8f38111&groupId=cc60019e-33b7-4ff7-85f3-c23f5bb3ef0b"
+    tokenType = "aad"
+    accessToken = {{accessToken}}> 
+  </powerbi-component>
+
+</div>
+
+
+<!-- 
+<button (click)="getToken()" >Click</button>
+<div style="text-align:center" *ngIf="flag" class="reports-iframe">
+  <h1>
+    {{title}}
+  </h1>
+  <powerbi-component 
+    type="report"
+    id= '549d8b0e-b29a-4ec4-9f0d-dacdd8f38111'
+    embedUrl = "https://app.powerbi.com/reportEmbed?reportId=549d8b0e-b29a-4ec4-9f0d-dacdd8f38111&groupId=cc60019e-33b7-4ff7-85f3-c23f5bb3ef0b"
+    tokenType = "aad"
+    accessToken = {{accessToken}}> 
+  </powerbi-component>
+
+</div> -->
