@@ -15,7 +15,8 @@ const appRoutes: Routes = [
     component: BIComponent,
     data: { title: 'Power BI' }
   },
-  { path: '',
+  {
+    path: '',
     redirectTo: '/bi',
     pathMatch: 'full'
   }
